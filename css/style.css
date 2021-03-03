@@ -1,0 +1,42 @@
+/* HEADER */
+
+header .logo img{
+  width: 80%;
+  vertical-align: top;
+}
+
+header .logo{
+  line-height: 35px;
+}
+
+nav{
+  padding: 20px 0;
+}
+
+.menu{
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.menu li{
+  display: inline-block;
+  margin-left: 12px;
+  line-height: 35px;
+}
+
+.menu li a{
+  text-decoration: none;
+  color: black;
+}
+
+.right .my-btn{
+  color: blue;
+  border: 1px solid blue;
+}
+
+/* Jumbotron */
+.jumbotron{
+  background-image: url("../img/ms-jumbo.jpg");
+  height: 200px;
+}
+/* FINE HEADER */

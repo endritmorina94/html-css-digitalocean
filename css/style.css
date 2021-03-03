@@ -1,8 +1,25 @@
 /* COMMON */
-.standard-text{
-  font-size: 16px;
+img{
+  width: 100%;
+  display: block;
 }
 
+.menu{
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.standard-text{
+  font-size: 21px;
+}
+
+.bg-grey{
+  background-color: #F3F5F9;
+}
+
+.bg-white{
+  background-color: white;
+}
 /* FINE COMMON */
 
 /* HEADER */
@@ -20,18 +37,13 @@ nav{
   padding: 20px 0;
 }
 
-.menu{
-  list-style-type: none;
-  margin-bottom: 0;
-}
-
-.menu li{
+header .menu li{
   display: inline-block;
   margin-left: 12px;
   line-height: 35px;
 }
 
-.menu li a{
+header .menu li a{
   text-decoration: none;
   color: black;
 }
@@ -45,6 +57,7 @@ nav{
 .jumbotron{
   background-image: url("../img/ms-jumbo.jpg");
   color: white;
+  margin-bottom: 0;
 }
 
 .user-hub{
@@ -70,3 +83,66 @@ nav{
   text-decoration: underline;
 }
 /* FINE HEADER */
+
+/* MAIN */
+
+/* Partners */
+.partners-logos .menu li{
+  display: inline-block;
+  width: calc((100% / 6) - 4px);
+}
+
+.partners-logos .menu li img{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.partners{
+  padding: 30px 0;
+}
+
+/* What we do */
+.features{
+  padding: 50px 0;
+}
+.small-container{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.what-we-do-info{
+  margin-top: 80px;
+}
+
+.what-we-do-info .menu{
+  width: 30%;
+  text-align: left;
+  padding-left: 0;
+}
+
+.what-we-do-info li{
+  border-left: 1px solid grey;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+
+.what-we-do-info li:first-child{
+  padding-top: 10px;
+}
+
+.what-we-do-info li:last-child{
+  padding-bottom: 10px;
+}
+
+.what-we-do-info a{
+  color: grey;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.feature-details img{
+  width: 15%;
+}
+
+
+/* FINE MAIN */

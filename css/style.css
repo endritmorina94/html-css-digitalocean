@@ -1,3 +1,10 @@
+/* COMMON */
+.standard-text{
+  font-size: 16px;
+}
+
+/* FINE COMMON */
+
 /* HEADER */
 
 header .logo img{
@@ -37,6 +44,29 @@ nav{
 /* Jumbotron */
 .jumbotron{
   background-image: url("../img/ms-jumbo.jpg");
-  height: 200px;
+  color: white;
+}
+
+.user-hub{
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.google-btn{
+  margin-top: 10px;
+  background-image: url("../img/google-icon.png");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.jumbotron .user-hub p{
+  font-size: 12px;
+}
+
+.user-hub p a{
+  text-decoration: underline;
 }
 /* FINE HEADER */

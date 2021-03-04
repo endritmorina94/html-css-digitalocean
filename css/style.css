@@ -22,6 +22,13 @@ img{
   font-size: 14px;
 }
 
+.small-text,
+.standard-text,
+.our-partners h5,
+.features .what-we-do-info a{
+  color: #5C6A88;
+}
+
 .bg-grey{
   background-color: #F3F5F9;
 }
@@ -36,8 +43,21 @@ h1, h2, h3, h4, h5, main a{
   font-weight: 700;
 }
 
+h1, h2, h3, h4, h5{
+  color: #031C4E;
+}
+
+.speed-testing h2,
+.get-started h2{
+  color: white;
+}
+
 a:hover{
   text-decoration: none;
+}
+
+.arrow{
+  margin-left: 10px;
 }
 /* FINE COMMON */
 
@@ -54,21 +74,31 @@ header .logo{
 
 nav{
   padding: 20px 0;
+  font-weight: bold;
 }
 
-header .list li{
+nav i{
+  font-size: 11px;
+}
+
+nav .list li{
   margin-left: 12px;
   line-height: 35px;
 }
 
-header .list li a{
+nav .list li a{
   text-decoration: none;
-  color: black;
+  color: #031C4E;
 }
 
-.right .my-btn{
+nav .list li a:hover{
+  color: #2285FD;
+}
+
+nav .list .my-btn{
   color: blue;
   border: 1px solid blue;
+  font-weight: bold;
 }
 
 /* Jumbotron */
@@ -81,8 +111,9 @@ header .list li a{
 .user-hub{
   background-color: white;
   color: black;
-  padding: 10px 20px;
+  padding: 25px 20px;
   border-radius: 5px;
+  margin-top: 5px;
 }
 
 .google-btn{
@@ -91,10 +122,34 @@ header .list li a{
   background-size: 25px;
   background-repeat: no-repeat;
   background-position: left center;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.google-btn:hover{
+  color: #2285FD;
+}
+
+.my-btn{
+  box-shadow: none;
+}
+
+.jumbotron .standard-text{
+  color: white;
+  opacity: 0.7;
 }
 
 .jumbotron .user-hub p{
   font-size: 12px;
+  margin-top: 10px;
+}
+
+.big-link{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.my-form{
+  margin-top: 10px;
 }
 
 .user-hub p a{
@@ -153,9 +208,12 @@ header .list li a{
 }
 
 .what-we-do-info a{
-  color: grey;
   text-decoration: none;
   font-size: 18px;
+}
+
+.what-we-do-info a:hover{
+  color: #031C4E;
 }
 
 .feature-details img{
@@ -214,7 +272,7 @@ header .list li a{
 }
 
 .features-you-need img{
-  width: 15%;
+  width: 12%;
   margin-bottom: 20px;
 }
 
@@ -245,6 +303,10 @@ header .list li a{
 
 .cities-list a{
   color: #00D5D1;
+}
+
+.cities-list a:hover{
+  color: white;
 }
 /* Fine Speed-testing Section */
 

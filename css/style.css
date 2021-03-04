@@ -74,7 +74,6 @@ header .logo{
 
 nav{
   padding: 20px 0;
-  font-weight: bold;
 }
 
 nav i{
@@ -89,6 +88,7 @@ nav .list li{
 nav .list li a{
   text-decoration: none;
   color: #031C4E;
+  font-size: 16px;
 }
 
 nav .list li a:hover{
@@ -131,6 +131,10 @@ nav .list .my-btn{
 
 .my-btn{
   box-shadow: none;
+}
+
+.my-btn a{
+  color: white;
 }
 
 .jumbotron .standard-text{
@@ -332,7 +336,7 @@ nav .list .my-btn{
 
 /* Get started section */
 .get-started{
-  padding: 40px 0;
+  padding: 40px 0 60px;
 }
 
 .get-started button{

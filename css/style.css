@@ -82,6 +82,7 @@ header .logo{
 
 header .logo img{
   width: 80%;
+  max-width: 260px;
   display: inline-block;
 }
 
@@ -393,6 +394,7 @@ nav .burger a:hover{
 footer{
   background-color: #031C4E;
   padding: 40px 0;
+  position: relative;
 }
 
 .page-credits img{
@@ -437,6 +439,68 @@ footer a:hover{
 }
 /* FINE FOOTER */
 
+/* SHARK */
+.annoying-shark{
+  position: fixed;
+  right: -200px;
+  bottom: 20px;
+}
+
+.bubble-speech{
+  width: 220px;
+  font-size: 14px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  right: 310px;
+}
+
+.bubble-speech p{
+  margin-bottom: 0;
+}
+
+.bubble-speech::before{
+  position: absolute;
+  bottom: 10px;
+  left: 97%;
+  content: "";
+  border: 10px solid transparent;
+  border-top-color: white;
+  border-bottom: 0;
+  transform: rotate(270deg);
+}
+
+.square{
+  position: relative;
+  background-color: #006AFF;
+  padding: 8px 0;
+  width: 68px;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.notifications{
+  color: white;
+  background-color: red;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 3px solid white;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 24px;
+  position: absolute;
+  top: -10px;
+  left: 80%;
+}
+
+
+/* FINE SHARK */
+
 /* SEZIONE RESPONSIVE */
 
 @media all and (max-width: 1199px){
@@ -458,7 +522,7 @@ footer a:hover{
 
   /* HEADER */
   header .logo img{
-    min-width: 240px;
+    width: 240px;
   }
 
   .jumbotron h1{
@@ -471,12 +535,43 @@ footer a:hover{
   }
 
   /* FOOTER */
+  .page-credits img{
+    width: 40px;
+  }
+
   .page-credits{
     margin-bottom: 10px;
   }
 
   .page-links{
     margin-bottom: 30px;
+  }
+
+  /* SHARK */
+  .annoying-shark{
+    position: fixed;
+    bottom: 40px;
+    left: 75px;
+  }
+
+  .square{
+    display: block;
+  }
+
+  .bubble-speech{
+    position: relative;
+    right: 0;
+    bottom: -20px;
+  }
+
+  .bubble-speech::before{
+    bottom: 100%;
+    left: 10%;
+    content: "";
+    border: 10px solid transparent;
+    border-top-color: white;
+    border-bottom: 0;
+    transform: rotate(180deg);
   }
 }
 

@@ -92,6 +92,10 @@ header .menu li a{
 /* MAIN */
 
 /* Partners */
+.partners{
+  padding: 30px 0;
+}
+
 .partners-logos .menu li{
   display: inline-block;
   width: calc((100% / 6) - 4px);
@@ -100,10 +104,6 @@ header .menu li a{
 .partners-logos .menu li img{
   display: inline-block;
   vertical-align: middle;
-}
-
-.partners{
-  padding: 30px 0;
 }
 
 /* What we do */
@@ -212,4 +212,33 @@ header .menu li a{
 .features-you-need a{
   font-weight: bold;
 }
+
+/* Speed-testing Section */
+.speed-testing{
+  background: rgb(0,30,154);
+  background: linear-gradient(0deg, rgba(0,30,154,1) 0%, rgba(0,71,197,1) 100%);
+  color: white;
+  padding: 40px 0;
+}
+
+.speed-testing .intro{
+  margin-bottom: 20px;
+}
+
+.cities-list .city{
+  border-bottom: 1px solid white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cities-list .row [class*="col"]:nth-child(2){
+  color: lightgrey;
+}
+
+.cities-list a{
+  color: #00D5D1;
+}
+/* Fine Speed-testing Section */
 /* FINE MAIN */

@@ -334,6 +334,10 @@ nav .burger a:hover{
   margin-bottom: 20px;
 }
 
+.cities-list{
+  padding: 0 15px;
+}
+
 .cities-list .city{
   border-bottom: 1px solid white;
   padding-top: 8px;
@@ -444,6 +448,7 @@ footer a:hover{
   position: fixed;
   right: -200px;
   bottom: 20px;
+  z-index: 1;
 }
 
 .bubble-speech{
@@ -470,6 +475,7 @@ footer a:hover{
   border-top-color: white;
   border-bottom: 0;
   transform: rotate(270deg);
+  filter: drop-shadow(-1px 2px 1px rgb(0, 0, 0, 0.3));
 }
 
 .square{
@@ -496,6 +502,12 @@ footer a:hover{
   position: absolute;
   top: -10px;
   left: 80%;
+}
+
+.bubble-speech,
+.square,
+.notifications{
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -549,7 +561,6 @@ footer a:hover{
 
   /* SHARK */
   .annoying-shark{
-    position: fixed;
     bottom: 40px;
     left: 75px;
   }
@@ -567,11 +578,8 @@ footer a:hover{
   .bubble-speech::before{
     bottom: 100%;
     left: 10%;
-    content: "";
-    border: 10px solid transparent;
-    border-top-color: white;
-    border-bottom: 0;
     transform: rotate(180deg);
+    filter: drop-shadow(-1px 2px 1px rgb(0, 0, 0, 0.1));
   }
 }
 

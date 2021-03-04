@@ -4,10 +4,14 @@ img{
   display: block;
 }
 
-.menu{
+.list{
   list-style-type: none;
   margin-bottom: 0;
   padding-left: 0;
+}
+
+.list.straight li{
+  display: inline-block;
 }
 
 .standard-text{
@@ -31,6 +35,10 @@ img{
 h1, h2, h3, h4, h5, main a{
   font-weight: 700;
 }
+
+a:hover{
+  text-decoration: none;
+}
 /* FINE COMMON */
 
 /* HEADER */
@@ -48,13 +56,12 @@ nav{
   padding: 20px 0;
 }
 
-header .menu li{
-  display: inline-block;
+header .list li{
   margin-left: 12px;
   line-height: 35px;
 }
 
-header .menu li a{
+header .list li a{
   text-decoration: none;
   color: black;
 }
@@ -102,12 +109,11 @@ header .menu li a{
   padding: 30px 0;
 }
 
-.partners-logos .menu li{
-  display: inline-block;
+.partners-logos .list li{
   width: calc((100% / 6) - 4px);
 }
 
-.partners-logos .menu li img{
+.partners-logos .list li img{
   display: inline-block;
   vertical-align: middle;
 }
@@ -126,7 +132,7 @@ header .menu li a{
   margin-top: 80px;
 }
 
-.what-we-do-info .menu{
+.what-we-do-info .list{
   width: 30%;
   text-align: left;
   padding-left: 0;
@@ -186,11 +192,7 @@ header .menu li a{
   font-weight: bold;
 }
 
-.carousel li{
-  display: inline-block;
-}
-
-.menu.circles a{
+.list.circles a{
   display: inline-block;
   height: 10px;
   width: 10px;
@@ -247,7 +249,7 @@ header .menu li a{
 /* Fine Speed-testing Section */
 
 /* Development teams love us */
-.dev-teams .menu{
+.dev-teams .list{
   margin-top: 20px;
 }
 
@@ -274,6 +276,53 @@ header .menu li a{
 .get-started button{
   margin-top: 20px;
 }
-
 /* Fine Get started section */
 /* FINE MAIN */
+
+/* FOOTER */
+footer{
+  background-color: #031C4E;
+  padding: 40px 0;
+}
+
+.page-credits img{
+  width: 15%;
+}
+
+.page-credits p{
+  font-weight: bold;
+  margin-top: 10px;
+  color: #A6ADBD;
+}
+
+.page-credits p span{
+  color: #5A6887;
+}
+
+.page-credits .list li{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.page-credits a{
+  font-size: 23px;
+  color: #A6ADBD;
+}
+
+footer h5{
+  color: white;
+}
+
+.page-links a{
+  font-weight: bold;
+  color: #A6ADBD;
+}
+
+.page-links li{
+  margin-top: 10px;
+}
+
+footer a:hover{
+  color: white
+}
+/* FINE FOOTER */

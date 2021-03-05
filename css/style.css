@@ -1,4 +1,17 @@
 /* COMMON */
+body{
+  text-align: center;
+}
+
+.logo,
+.jumbotron-title,
+.feature-details,
+.features-you-need,
+.cities-list,
+footer{
+  text-align: left;
+}
+
 img{
   width: 100%;
   display: block;
@@ -45,7 +58,8 @@ h1, h2, h3, h4, h5, main a{
 }
 
 h1, h2, h3, h4, h5,
-.carousel i:last-child{
+.carousel i:last-child,
+.dev-teams .carousel .small-text b{
   color: #031C4E;
 }
 
@@ -115,17 +129,19 @@ nav i{
 
 nav .list{
   line-height: 39px;
+  margin-top: 3px;
 }
 
 nav .list li{
   margin-left: 12px;
-  vertical-align: middle;
 }
 
 nav .list li a{
   text-decoration: none;
-  color: #031C4E;
+  color: #1E3460;
   font-size: 17px;
+  font-weight: bold;
+  vertical-align: middle;
 }
 
 nav .list li a:hover{
@@ -141,7 +157,8 @@ nav .list .my-btn{
 nav .burger a{
   color: #2285FD;
   display: inline-block;
-  vertical-align: text-top;
+  vertical-align: middle;
+  margin-top: 7px;
 }
 
 nav .burger a i{
@@ -149,7 +166,7 @@ nav .burger a i{
 }
 
 nav .burger{
-  line-height: 39px;
+  line-height: 44px;
 }
 
 nav .list .my-btn:hover{
@@ -280,6 +297,7 @@ nav .burger a:hover{
 
 .feature-details img{
   width: 15%;
+  max-width: 70px;
 }
 
 /* Devs teasing */
@@ -328,6 +346,7 @@ nav .burger a:hover{
 
 .features-you-need img{
   width: 12%;
+  max-width: 65px;
   margin-bottom: 20px;
 }
 
@@ -364,6 +383,10 @@ nav .burger a:hover{
   color: lightgrey;
 }
 
+.cities-list .row [class*="col"]:nth-child(3){
+  text-align: right;
+}
+
 .cities-list a{
   color: #00D5D1;
 }
@@ -380,12 +403,13 @@ nav .burger a:hover{
 
 .dev-teams img{
   width: 50%;
+  min-width: 230px;
   margin: 0 auto 20px;;
 }
 
 .dev-teams .img-container{
   background-color: white;
-  padding: 60px 0;
+  padding: 60px 4px;
 }
 
 .dev-teams .small-text{
@@ -604,12 +628,24 @@ footer a:hover{
     width: calc((100% / 2) - 2px);
   }
 
+  .small-container{
+    width: 100%;
+  }
+
   .what-we-do-info .list{
     margin-bottom: 10px;
   }
 
   .what-we-do-info img{
     margin-top: 10px;
+  }
+
+  .features-you-need img{
+    margin-top: 30px;
+  }
+
+  .dev-teams .img-container{
+    padding: 60px 2px;
   }
 
   .slider i{

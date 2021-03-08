@@ -435,6 +435,7 @@ nav .burger a:hover{
 .dev-teams .img-container{
   background-color: white;
   padding: 60px 4px;
+  vertical-align: middle;
 }
 
 .dev-teams .small-text{

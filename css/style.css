@@ -93,6 +93,10 @@ main a{
   display: inline-block;
   width: 50%;
   margin: 0 20px;
+}
+
+.img-container img{
+  display: inline-block;
   vertical-align: middle;
 }
 

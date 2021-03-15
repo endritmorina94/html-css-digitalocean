@@ -315,14 +315,6 @@ nav .burger a:hover{
   border-left: 2px solid #2285FD;
 }
 
-.what-we-do-info li:first-child{
-  padding-top: 10px;
-}
-
-.what-we-do-info li:last-child{
-  padding-bottom: 10px;
-}
-
 .what-we-do-info li:hover{
   border-left: 2px solid #2285FD;
 }

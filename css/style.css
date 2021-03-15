@@ -308,6 +308,7 @@ nav .burger a:hover{
 .what-we-do-info li{
   border-left: 2px solid #E5E5E5;
   padding: 11px 10px;
+  cursor: pointer;
 }
 
 .what-we-do-info .active-now{
@@ -322,6 +323,10 @@ nav .burger a:hover{
   padding-bottom: 10px;
 }
 
+.what-we-do-info li:hover{
+  border-left: 2px solid #2285FD;
+}
+
 .what-we-do-info a{
   text-decoration: none;
   font-size: 18px;
@@ -331,7 +336,7 @@ nav .burger a:hover{
   color: #031C4E;
 }
 
-.what-we-do-info a:hover{
+.what-we-do-info li:hover a{
   color: #031C4E;
 }
 

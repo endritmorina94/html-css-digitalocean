@@ -306,9 +306,12 @@ nav .burger a:hover{
 }
 
 .what-we-do-info li{
-  border-left: 1px solid grey;
-  padding-left: 10px;
-  padding-bottom: 15px;
+  border-left: 2px solid #E5E5E5;
+  padding: 11px 10px;
+}
+
+.what-we-do-info .active-now{
+  border-left: 2px solid #2285FD;
 }
 
 .what-we-do-info li:first-child{
@@ -322,6 +325,10 @@ nav .burger a:hover{
 .what-we-do-info a{
   text-decoration: none;
   font-size: 18px;
+}
+
+.what-we-do-info .active-now a{
+  color: #031C4E;
 }
 
 .what-we-do-info a:hover{

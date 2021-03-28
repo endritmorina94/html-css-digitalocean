@@ -5,8 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Digital Ocean</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,92 +17,132 @@
   <!-- HEADER -->
   <header>
     <!-- Navigator -->
-    <div class="nav-container">
-      <nav>
-        <div class="container">
+    <div class="navigator-fixed-bar">
+      <div class="container-fluid top-nav-links">
           <div class="row">
-            <div class="col-xs-8 col-md-6 col-lg-3">
-              <div class="logo">
-                <img src="img/logo.png" alt="logo">
+              <div class="col d-none d-lg-block col-lg-7 text-left">
+                <div class="learn-more">
+                  <button class="btn">
+                    LEARN MORE
+                  </button>
+                  <a href="#">
+                    Check out the latest DigitalOcean Currents Survey Report on Open Source >
+                  </a>
+                </div>
               </div>
-            </div>
 
-            <div class="hidden-xs hidden-sm col-md-5">
-              <ul class="list straight">
-                <li><a href="#">Products <i class="fas fa-chevron-down"></i></a></li>
-                <li><a href="#">Customers</a></li>
-                <li><a href="#">Community <i class="fas fa-chevron-down"></i></a></li>
-                <li><a href="#">Pricing</a></li>
-              </ul>
-            </div>
-
-            <div class="hidden-xs hidden-sm col-md-4 text-right">
-              <ul class="list straight">
-                <li><a href="#">Docs</a></li>
-                <li><a href="#">Support <i class="fas fa-chevron-down"></i></a></li>
-                <li><a href="#">Login</a></li>
-                <li><a class="btn my-btn" href="#">Sign Up</a></li>
-              </ul>
-            </div>
-
-            <div class="col-xs-4 visible-xs-block visible-sm-block text-right">
-              <div class="burger">
-                <a href="#"><i class="fas fa-bars"></i></a>
+              <div class="col d-none d-lg-block col-lg-5 text-right">
+                <div class="top-right-nav-links">
+                  <ul class="list straight">
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Get Support</a></li>
+                    <li><a href="#">Sales</a></li>
+                  </ul>
+                </div>
               </div>
-            </div>
-
           </div>
         </div>
-      </nav>
+
+      <div class="nav-container">
+        <nav>
+          <div class="container-fluid">
+            <div class="row navigator">
+              <div class="logo-container">
+                <div class="logo">
+                  <img src="img/logo.png" alt="logo">
+                </div>
+              </div>
+
+              <div class="d-none d-lg-block">
+                <ul class="list straight">
+                  <li><a href="#">Products <i class="fas fa-chevron-down"></i></a></li>
+                  <li><a href="#">Solutions <i class="fas fa-chevron-down"></i></a></li>
+                  <li><a href="#">Marketplace</a></li>
+                  <li><a href="#">Customers</a></li>
+                  <li><a href="#">Community <i class="fas fa-chevron-down"></i></a></li>
+                  <li><a href="#">Pricing</a></li>
+                </ul>
+              </div>
+
+              <div class="d-none d-lg-block ml-auto text-right">
+                <ul class="list straight">
+                    <li><a class="btn my-btn" href="#">Sign In</a></li>
+                  <li><a class="btn my-btn sign-up" href="#">Sign Up</a></li>
+                </ul>
+              </div>
+
+              <div class="d-block d-lg-none ml-auto text-right">
+                <div class="burger">
+                  <a href="#"><i class="fas fa-bars"></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
     <!-- Fine Navigator -->
 
     <!-- Jumbotron -->
-    <div class="jumbotron">
+    <div class="jumbotron d-flex align-items-center">
       <div class="container">
 
-        <div class="row">
+        <div class="row justify-content-between align-items-center">
 
-          <div class="col-xs-12 col-sm-7 jumbotron-title">
+          <div class="col-xs-12 col-lg-7 jumbotron-title">
             <h1>
-              The simplest cloud platform for developers & teams
+              Welcome to the developer cloud
             </h1>
             <p class="standard-text">
-              Deploy, manage, and scale cloud applications faster and more
-              efficiently on DigitalOcean. We make managing infrastructure
-              easy for teams and businesses, whether you're running one
-              virtual machine or ten thousand.
+              We make it simple to launch in the cloud and scale up as you grow – with an intuitive control panel, predictable pricing, team accounts, and more.
             </p>
           </div>
 
-          <div class="col-xs-12 col-sm-5">
+          <div class="col-12 col-lg-5 .offset-xl-1 col-xl-4 hub-container">
             <div class="user-hub">
-              <h3>
-                Deploy your app in seconds.
-              </h3>
-              <a class="big-link" href="">Get started now.</a>
+              <div class="user-hub-title">
+                  <h3>
+                    Deploy in seconds
+                  </h3>
+              </div>
 
-              <form class="my-form" action="post">
-                <div class="form-group">
-                  <label for="email" class="sr-only">Email</label>
-                  <input class="form-control" type="email" id="email" placeholder="Email" autocomplete="off">
-                </div>
+              <div class="user-hub-form">
+                  <form class="my-form" action="post">
+                    <div class="form-group">
+                      <label for="email" class="sr-only">First Name</label>
+                      <input class="form-control" type="email" id="email" placeholder="First Name" autocomplete="off">
+                    </div>
 
-                <div class="form-group">
-                  <label for="password" class="sr-only">Password</label>
-                  <input class="form-control" type="password" id="password" placeholder="Password" autocomplete="off">
-                </div>
+                    <div class="form-group">
+                      <label for="email" class="sr-only">Email Address</label>
+                      <input class="form-control" type="email" id="email" placeholder="Email Address" autocomplete="off">
+                    </div>
 
-                <button class="form-control btn btn-primary my-btn" type="button" name="button">
-                  <b>Create your account</b>
+                    <div class="form-group">
+                      <label for="password" class="sr-only">Password</label>
+                      <input class="form-control" type="password" id="password" placeholder="Password" autocomplete="off">
+                    </div>
+
+                    <button class="form-control my-btn" type="button" name="button">
+                      <b>Sign up with email</b>
+                    </button>
+
+
+                  </form>
+              </div>
+              <div class="google-btn-container">
+                <button class="form-control my-btn-2 google" type="button" name="button">
+                  <i class="fab fa-google"></i><b>Sign up with Google</b>
                 </button>
-                <button class="form-control btn google-btn" type="button" name="button">
-                  <b>Sign up with google</b>
+                <button class="form-control my-btn-2" type="button" name="button">
+                  <i class="fab fa-github"></i>
                 </button>
-                <p>By signing up you agree to the <a href="#">Terms of Service</a>.</p>
-              </form>
+              </div>
 
             </div>
+            <p>By signing up you agree to the <a href="#">Terms of Service</a>.</p>
           </div>
         </div>
 
@@ -582,22 +624,12 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="annoying-shark">
-
-        <div class="square">
-          <img src="img/shark.png" alt="">
-          <div class="notifications"><span>2</span></div>
-
-        </div>
-        <div class="bubble-speech">
-          <p>Can i annoy you while you try to click those links behind?</p>
-        </div>
-      </div>
-    </div>
   </footer>
   <!-- FINE FOOTER -->
 
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

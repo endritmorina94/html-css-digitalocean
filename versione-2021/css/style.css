@@ -33,7 +33,7 @@ img{
 }
 
 .small-text{
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .small-text,
@@ -66,6 +66,11 @@ h2, h3, h4, h5,
 
 h2{
   font-size: 32px;
+}
+
+
+h3{
+    font-size: 28px;
 }
 
 h5{
@@ -249,7 +254,7 @@ nav .burger a:hover{
 }
 
 .jumbotron-title{
-    width: 100%;
+  width: 100%;
 }
 
 .jumbotron-title h1{
@@ -305,7 +310,6 @@ nav .burger a:hover{
 .user-hub .my-btn{
   color: white;
   font-size: 14.5px;
-  padding: 15px;
   box-shadow: none;
   background-color: #006aff;
   border-color: #006aff;
@@ -313,9 +317,8 @@ nav .burger a:hover{
 }
 
 .user-hub .my-btn:hover{
-  background-color: #0353c3;
+  background-color: #1633ff;
 }
-
 
 .user-hub .btn:focus{
   outline: none;
@@ -401,7 +404,7 @@ nav .burger a:hover{
 
 /* What we do */
 .features{
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
 .features .standard-text{
@@ -413,8 +416,44 @@ nav .burger a:hover{
 }
 
 .small-container{
-  width: 80%;
+  max-width: 950px;
   margin: 0 auto;
+  padding: 25px;
+  border: 1px solid #E5E5E5;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+  margin-bottom: 150px;
+}
+
+.banner-teaser h3{
+  margin: 0 0 5px;
+}
+
+.banner-teaser p{
+  color: #5B6987;
+  margin: 0;
+}
+
+.banner-img{
+  padding-right: 25px;
+}
+
+.banner-img img{
+  width: 135px;
+}
+
+.very-big-btn button{
+  padding: 16px 56px;
+  font-weight: 600;
+  color: white;
+  background-color: #006aff;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+}
+
+.very-big-btn button:hover{
+  background-color: #1633ff;
 }
 
 .what-we-do-info{
